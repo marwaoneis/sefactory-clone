@@ -234,4 +234,22 @@ document.addEventListener("DOMContentLoaded", function () {
   slider.addEventListener("mouseleave", function () {
     intervalId = setInterval(showNextSlide, 5000);
   });
+  var faqDrops = document.querySelectorAll(".faq-drop");
+
+  faqDrops.forEach(function (faqDrop, index) {
+    var toggle = faqDrop.querySelector(".dropdown-toggle");
+    var dropdownList = faqDrop.querySelector(".dropdown-list");
+
+    // Initially show the first dropdown and hide others
+    if (index === 0) {
+      dropdownList.style.display = "block";
+    } else {
+      dropdownList.style.display = "none";
+    }
+
+    toggle.addEventListener("click", function () {
+      dropdownList.style.display =
+        dropdownList.style.display === "none" ? "block" : "none";
+    });
+  });
 });

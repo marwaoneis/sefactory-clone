@@ -944,3 +944,130 @@ span.green {
 .body-section-container.tes {
   padding-bottom: 35px;
 }
+
+.body-section-container.faqs {
+  background-color: var(--black);
+}
+
+.body-section-content-wrapper.noheight {
+  height: auto;
+  flex-direction: column;
+}
+
+.section-title.sub-section {
+  color: var(--white);
+}
+
+.collection-list-wrapper {
+  align-self: stretch;
+}
+
+.faqs-button {
+  color: var(--white);
+  margin-top: 24px;
+  text-align: right;
+  align-self: stretch;
+  background-color: var(--black-2);
+  flex: 1;
+}
+
+.collection-list {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  flex-direction: column;
+  display: flex;
+}
+
+.faq-drop {
+  border: 5px solid var(--black-2);
+  cursor: pointer;
+  border-radius: 10px;
+  display: block;
+  overflow: hidden;
+}
+
+.w-dropdown {
+  text-align: left;
+  z-index: 900;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.dropdown-toggle {
+  height: auto;
+  background-color: var(--black-2);
+  color: var(--white);
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+  padding-left: 24px;
+  display: flex;
+}
+
+.w-dropdown-toggle {
+  user-select: none;
+  cursor: pointer;
+  padding-right: 40px;
+  vertical-align: top;
+  text-align: left;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  position: relative;
+}
+
+.faq-icon {
+  font-weight: 900;
+  width: 1em;
+  height: 1em;
+  margin: auto 20px auto auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.faq-icon::before {
+  content: "î˜ƒ";
+}
+
+.green.right-space {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.text-block-6 {
+  color: var(--white);
+  white-space: normal;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.dropdown-list {
+  background-color: var(--black-2);
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: block;
+  position: static;
+  min-width: 100%;
+}
+
+.rich-text-block {
+  height: auto;
+  color: var(--light_grey);
+  background-clip: border-box;
+  margin-bottom: 0;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow: hidden;
+}
